@@ -6,7 +6,7 @@
         v-for="item in posts"
         :key="item.id"
       >
-        {{ item.title }}
+        <nuxt-link :to="'/article/' + item.id">{{ item.title }}</nuxt-link>
       </li>
     </ul>
   </div>
