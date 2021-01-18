@@ -1,5 +1,16 @@
 # NuxtJS 基础
 
+[01-基础项目](https://github.com/jwchan1996/nuxtjs-demo/tree/main)  
+[02-路由目录规则](https://github.com/jwchan1996/nuxtjs-demo/tree/02-router)  
+[03-路由跳转](https://github.com/jwchan1996/nuxtjs-demo/tree/03-router-link)  
+[04-动态路由](https://github.com/jwchan1996/nuxtjs-demo/tree/04-dynamic-router)  
+[05-嵌套路由](https://github.com/jwchan1996/nuxtjs-demo/tree/05-nest-router)  
+[06-自定义路由](https://github.com/jwchan1996/nuxtjs-demo/tree/06-custom-router)  
+[07-视图-模板](https://github.com/jwchan1996/nuxtjs-demo/tree/07-views-template)  
+[08-视图-布局](https://github.com/jwchan1996/nuxtjs-demo/tree/08-views-layout)  
+[09-异步数据-asyncData 方法](https://github.com/jwchan1996/nuxtjs-demo/tree/09-asyncData)  
+[10-异步数据-上下文对象](https://github.com/jwchan1996/nuxtjs-demo/tree/10-context)
+
 ## Nuxt.js 介绍
 
 ### 是什么
@@ -318,6 +329,13 @@ router: {
 ### asyncData 方法
 
 Nuxt.js 扩展了 Vue.js，增加了一个叫 **asyncData** 的方法，使得我们可以在设置组件的数据之前能异步获取或处理数据。
+
+- 基本用法
+    - 它会将 asyncData 返回的数据融合组件 data 方法返回数据一并给组件
+    - 调用时机：服务端渲染期间和客户端路由更新之前
+- 注意事项
+    - 只能在页面组件中使用，即 pages 目录下
+    - 没有 this，因为它是在组件初始化之前被调用的
 
 ### 上下文对象
 
