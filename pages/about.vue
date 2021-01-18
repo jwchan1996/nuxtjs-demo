@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: 'AboutPage'
+  name: 'AboutPage',
+  // 默认 layout 配置是 default
+  // layout: 'default'
+  // 这里指定 about 路由页面为 foo 布局
+  layout: 'foo'
 }
 </script>
 
