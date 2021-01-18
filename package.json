@@ -1,0 +1,14 @@
+{
+  "name": "nuxtjs-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jwchan1996/nuxtjs-demo.git",
+  "author": "jwchan <741755613@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^2.14.12"
+  }
+}
